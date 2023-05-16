@@ -1,0 +1,36 @@
+*
+{
+    background-image: url(Fundo_login.png);
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: 100%;
+}
+
+p
+{
+    background: none;
+}
+
+.display
+{
+    text-align: center;
+    width: 500px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-left: 45%;
+    position: fixed;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color:darkgrey;
+    background: white;
+    opacity: 0.9;
+}
+
+#bem_vindo
+{
+    font: 15px;
+    font-weight: bold;
+}
