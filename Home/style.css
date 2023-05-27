@@ -4,7 +4,7 @@
 }
 
 a {
-  color: #fff;
+  color: #FFC72C;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -14,9 +14,9 @@ a:hover {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 35px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
 }
 
 nav {
@@ -24,14 +24,14 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #23232e;
+  background: #FFFFFF;
   height: 8vh;
 }
 
 main {
-  background: url("bg.jpg") no-repeat center center;
+  background: url("Fundo_login.png") no-repeat center center;
   background-size: cover;
-  height: 92vh;
+  height: 100vh;
 }
 
 .nav-list {
@@ -41,7 +41,7 @@ main {
 
 .nav-list li {
   letter-spacing: 3px;
-  margin-left: 32px;
+  margin-left: 30px;
 }
 
 .mobile-menu {
