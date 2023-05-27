@@ -6,11 +6,6 @@
     background-size: 100%;
 }
 
-p
-{
-    background: none;
-}
-
 #container_log
 {
     display: grid;
@@ -31,6 +26,7 @@ p
     background: white;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 7px 15px 12px rgb(248, 242, 242);
+    
 }
 
 #bem_vindo
@@ -40,14 +36,22 @@ p
     font-family:Arial;
     margin-top:73px;   
     color: rgb(0, 0, 0) ;
+    background: none;
 }
 
-input
+input[type=email],input[type=password] 
 {
-    height:35px;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+#mail_log,#pass_log
+{
+    height:40px;
     width: 375px;
     margin: 3% 0 3% 0;
-    background: #fbf4f4;
+    background: #fcfbfb;
     border-style: solid;
     border-radius: 2px;
     border-width: 1px;
@@ -57,8 +61,101 @@ input
     font-weight: 100;
 }
 
+/*
+.cmb
+{
+    display: grid;
+    height: 65px;
+    text-align: start;
+    background: transparent;
+    font-family:Arial;
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+#label_cmb
+{
+    background: none;
+    font-size: 14px;
+    margin: 0;
+    padding-left: 5px;
+}
+
+#cmb_tipo_user
+{
+    background:  #fcfbfb;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 5px;
+
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color:rgb(200, 218, 218);
+}
+*/
+
+.lembrar_email
+{
+    background: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: start;
+    padding-bottom: 15px;
+}
+
+#lbl_mail
+{
+    background: none;
+}
+
+.lembrar_email input
+{
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
 #btn_login
 {
-    height: 35px;
-    border-radius: 5px;
+    height: 45px;
+    border-radius: 5px;    
+    border: none;
+    background: #ffc72c;
+    font-weight: bold;
+    font-size: 16px;
 }
+
+#btn_login:hover
+{
+    background-color: #fcd874;
+}
+
+.registro
+{
+    display: inline-block;
+    background: none;
+    font-family:Arial;
+    font-size: 13px;
+}
+
+#redirect_registro
+{
+    color: #ffc72c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#redirect_registro:hover
+{
+    color: #fcd874;
+}
+
+
+
+
+  
+
+
+

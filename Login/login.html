@@ -10,9 +10,31 @@
     <body>
         <div class="display" id="container_log">
             <p id="bem_vindo">Faça seu Login e peça já!</p>
+
             <input type="email" name="email_log" id="mail_log" required>
             <input type="password" name="password_log" id="pass_log" required>
-            <button type="button" onclick="SubmitEvent" class="btn_submit" id="btn_login" ></button>
+
+            <!--
+                <div class="cmb">
+                    <label id="label_cmb" for="cmb_tipo_user">Entrar Como:</label>
+                    <select name="cmb_tipo_user" id="cmb_tipo_user">
+                        <option value="user">Usuário</option>
+                        <option value="loja">Colaborador</option>
+                    </select>
+                </div>
+            -->
+
+            <div class="lembrar_email">
+                <input type="checkbox" id="chk_mail" name="email" checked>
+                <label for="chk_mail" id="lbl_mail">Lembrar e-mail</label>
+            </div>
+
+            <button type="button" onclick="SubmitEvent" class="btn_submit" id="btn_login" >Entrar</button>
+            <div class="registro">
+
+                <p id="txt_conta" class="registro">Não possui uma Conta?</p> 
+                <a href="" id="redirect_registro" class="registro"> Inscreva-se</a>
+            </div>
         </div>
     </body>
 </html>
