@@ -9,6 +9,24 @@ a {
   transition: 0.3s;
 }
 
+#divBusca{
+  background-color:#FC72C;
+  border:solid 1px;
+  border-radius:15px;
+  width: 250px;px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:px;
+  border:none;
+  height:32px;
+  width:180px;
+}
+
 a:hover {
   opacity: 0.7;
 }
