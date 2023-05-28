@@ -32,10 +32,14 @@ a:hover {
 }
 
 .logo {
-  font-size: 35px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+  height: 65px;
+  width: 130px;
+  
 }
+
+
+
+
 
 nav {
   display: flex;
