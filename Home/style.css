@@ -10,10 +10,10 @@ a {
 }
 
 #divBusca{
-  background-color:#FC72C;
+  background-color:#FcC72C;
   border:solid 1px;
   border-radius:15px;
-  width: 250px;px;
+  width: 250px;
 }
 
 #txtBusca{
@@ -47,9 +47,12 @@ nav {
 }
 
 main {
-  background: url("Fundo_login.png") no-repeat center center;
-  background-size: cover;
+  background: url("Fundo_login.png") no-repeat;
+  background-size: contain;
   height: 100vh;
+  background-repeat: no-repeat;
+  
+
 }
 
 .nav-list {
