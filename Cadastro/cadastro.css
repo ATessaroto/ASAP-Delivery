@@ -1,0 +1,17 @@
+*
+{
+    background-image: url(fundo_cadastro.png);
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: 100%;
+    outline: none;
+}
+
+img
+{
+    height: 100px;
+    width: 140px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+

@@ -4,6 +4,7 @@
     background-attachment: fixed;
     background-position: right top;
     background-size: 100%;
+    outline: none;
 }
 
 #container_log
@@ -13,11 +14,11 @@
     align-content: start;
     text-align: center;
     width: 445px;
-    height: 500px;
+    height: 430px;
     margin: 0 auto;
     margin-top: 110px;
     margin-left: 48%;
-    position: fixed;
+    position: absolute;
 
     border-style: solid;
     border-radius: 13px;
@@ -26,12 +27,11 @@
     background: white;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 7px 15px 12px rgb(248, 242, 242);
-    
 }
 
 #bem_vindo
 {
-    font-size: 23px;
+    font-size: 26px;
     font-weight:bold;
     font-family:Arial;
     margin-top:73px;   
@@ -54,12 +54,18 @@ input[type=email],input[type=password]
     background: #fcfbfb;
     border-style: solid;
     border-radius: 4px;
-    border-width: .5px;
+    border-width: 0.5px;
     border-color:rgb(200, 218, 218);
-
+    
     font-size: 16px;
     font-weight: 100;
 }
+
+#mail_log::placeholder,#pass_log::placeholder
+{
+    padding: 3px;
+}
+  
 
 /*
 .cmb
@@ -125,6 +131,7 @@ input[type=email],input[type=password]
     background: #ffc72c;
     font-weight: bold;
     font-size: 16px;
+    margin-top: 15px;
 }
 
 #btn_login:hover
@@ -138,6 +145,7 @@ input[type=email],input[type=password]
     background: none;
     font-family:Arial;
     font-size: 13px;
+    margin-top: 10px;
 }
 
 #redirect_registro
