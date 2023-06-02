@@ -51,7 +51,7 @@ nav {
 }
 
 main {
-  background: url("Fundo_login.png") no-repeat;
+  background: url("/Home/Imagens/Fundo_login.png") no-repeat;
   background-size: contain;
   height: 100vh;
   background-repeat: no-repeat;
