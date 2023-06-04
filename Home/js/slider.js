@@ -1,5 +1,5 @@
 let count = 1
-document.getElementById("radio1").chec = true;
+document.getElementById("radio1").checked = true;
 
 setInterval( function(){
 
@@ -11,5 +11,5 @@ function nextImage(){
      count = 1;
     }
 
-    document.getElementById("radio"+count).checcked = true;
+    document.getElementById("radio"+count).checked = true;
 }
