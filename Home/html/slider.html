@@ -5,58 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider com CSS</title>
-    <LINK rel="stylesheet" href="/Home/Stylesheet/slider.css">
+    <link rel="stylesheet" href="../Stylesheet/slider.css" />
 </head>
 <body>
 
-    <div class="slider">
-
-        <div class="slides">
-            <!--Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <!--Fim Radio Buttons-->
-
-            <!--Slide imagens-->
-            <div class="slide first">
-                <img src="../Img/massa.jpeg" alt="Img1"/>
-            </div>
-
-            <div class="slide">
-                <img src="../Img/pizza.jpeg" alt="Img2"/>
-            </div>
-
-            <div class="slide">
-                <img src="../Img/shawarma.jpeg" alt="Img3"/>
-            </div>
-
-            <div class="slide">
-                <img src="../Img/sobremesa.jpeg" alt="Img4"/>
-            </div>
-            <!-- Fim Slide image-->
-
-            <!--Navigation auto-->
-            <div classe="navigation-auto">
-                </div classe="auto-bton1"></div>
-                </div classe="auto-bton2"></div>
-                </div classe="auto-bton3"></div>
-                </div classe="auto-bton4"></div>
-            </div>
-                    
-        </div>
-
-        <div class="namual-navigation">
-            <label for="radio1" class=manual-btn></label>
-            <label for="radio2" class=manual-btn></label>
-            <label for="radio3" class=manual-btn></label>
-            <label for="radio4" class=manual-btn></label>
-        </div>
-
-        
-    </div>    
-    <script src="/Home/js/slider.js"></script>
+    <div id="carousel" class="carousel">
+    <div class="slides">
+        <div class="slide" data-state="active"><img class="slide-image" src="../Imagens/img/img/shawarma.jpeg" alt=""></div>
+        <div class="slide"><img class="slide-image" src="../Imagens/img/img/massa.jpeg" alt=""></div>
+        <div class="slide"><img class="slide-image" src="../Imagens/img/img/pizza.jpeg" alt=""></div>
+        <div class="slide"><img class="slide-image" src="../Imagens/img/img/sobremesa.jpeg" alt=""></div>
+    </div>
+    <div class="indicators">
+        <input class="indicator" name="indicator" data-slide="1" data-state="active" checked type="radio" />
+        <input class="indicator" name="indicator" data-slide="2" type="radio" />
+        <input class="indicator" name="indicator" data-slide="3" type="radio" />
+        <input class="indicator" name="indicator" data-slide="4" type="radio" />
+    </div>
+    </div>
     
 </body>
+<script src="../js/slider.js"></script>
 </html>
