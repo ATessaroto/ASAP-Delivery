@@ -13,13 +13,23 @@
     </header>
     
     <div class="display" id="container_log">
-        <p>Preencha seus Dados:</p>
-
+        <p class="titulo">Preencha seus Dados:</p>
+    
         <input type="text" name="nome_reg"  placeholder="Nome Compelto" id="nome_reg" required>
-        <input type="text" name="cpf_reg"  placeholder="CPF" id="cpf_reg" required>
-        <input type="date" name="date_reg"  placeholder="Data de Nascimento" id="date_reg" required>
-        <input type="email" name="email_log"  placeholder="Usuário" id="mail_log" required>
-        <input type="password" name="password_log" placeholder="Senha" id="pass_log" required>
+
+        <div class="personal_info">
+            <input type="text" name="cpf_reg"  placeholder="CPF" id="cpf_reg" required>
+            <input type="date" name="date_reg"  placeholder="Data de Nascimento" id="date_reg" required>
+        </div>
+
+        <input type="email" name="email_log"  placeholder="E-mail" id="mail_log" required>
+
+        <div class="senha">
+            <input type="password" name="password_log" placeholder="Senha" id="pass_log" required>
+            <input type="password" name="confirm_password_log" placeholder="Confirmar senha" id="c_pass_log" required>
+        </div>
+
+        <button type="button" onclick="SubmitEvent" class="btn_submit" id="btn_registro" >Registrar</button>
     </div>
 
 </body>

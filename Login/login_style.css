@@ -5,6 +5,7 @@
     background-position: right top;
     background-size: 100%;
     outline: none;
+
 }
 
 #container_log
@@ -59,6 +60,7 @@ input[type=email],input[type=password]
     
     font-size: 16px;
     font-weight: 100;
+    color: rgb(39, 39, 39);
 }
 
 #mail_log::placeholder,#pass_log::placeholder
@@ -132,6 +134,7 @@ input[type=email],input[type=password]
     font-weight: bold;
     font-size: 16px;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 #btn_login:hover

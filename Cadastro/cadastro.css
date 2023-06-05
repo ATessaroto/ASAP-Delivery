@@ -1,11 +1,13 @@
-*
+body
 {
+    
     background-image: url(fundo_cadastro.png);
     background-attachment: fixed;
     background-position: right top;
     background-size: 100%;
     outline: none;
-}
+    display: block;
+ }
 
 img
 {
@@ -14,4 +16,95 @@ img
     padding-left: 20px;
     padding-top: 20px;
 }
+
+#container_log
+{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 445px;
+    height: 450px;
+    margin: 0 auto;
+
+    border-style: solid;
+    border-radius: 13px;
+    border-width: 1px;
+    border-color:rgb(212, 212, 212);
+    background: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 10px 7px rgb(248, 242, 242);
+}
+
+input
+{
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+input
+{
+    height:45px;
+    width: 375px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #fcfbfb;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 0.5px;
+    border-color:rgb(200, 218, 218);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(39, 39, 39);
+}
+
+input::placeholder, input::placeholder[type="date"]
+{
+    padding: 3px;
+}
+
+.titulo
+{
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+#pass_log, #c_pass_log, #cpf_reg, #date_reg
+{
+    height:45px;
+    width: 183px;
+}
+
+.senha,.personal_info
+{
+    display: grid;
+    margin: auto;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#btn_registro
+{
+    height: 45px;
+    width: 380px;
+    border-radius: 5px;    
+    border: none;
+    margin: 0 auto;
+    background: #ffc72c;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn_registro:hover
+{
+    background-color: #fcd874;
+}
+
 
