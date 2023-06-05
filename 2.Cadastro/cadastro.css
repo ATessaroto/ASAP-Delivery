@@ -1,12 +1,14 @@
 body
 {
     
-    background-image: url(fundo_cadastro.png);
+    background-image: url(Fundo_registro.png);
     background-attachment: fixed;
     background-position: right top;
     background-size: 100%;
     outline: none;
     display: block;
+    padding-top: 150px;
+    padding-left: 150px;
  }
 
 img
