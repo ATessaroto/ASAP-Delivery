@@ -2,7 +2,8 @@
 	box-sizing: inherit;
 }
 body {
-	font-family: ubuntu;
+	font-family: system-ui;
+	
 }
 .box {
 	width: 100%;
@@ -28,16 +29,17 @@ nav ul {
 	list-style-type: none;
 	padding-left: 0;
 	font-size: 0;
-	background-color: #333
+	background-color:#cabe3a
 }
 nav li {
 	display: block;
 	font-size: 16px;
-	color: white;
+	color:#333;
 	margin: 0 5px;
 }
 ul.navArea>li>a {
-	color: #fff
+	color:#333C;
+	
 }
 nav a {
 	display: block;
@@ -48,7 +50,7 @@ nav a {
 .sub-menu li {
 	list-style-type: none;
 	display: inline-block;
-	width: 140px;
+	width: 160px;
 }
 ul.navArea li ul.sub-menu {
 	display: none;
@@ -67,13 +69,14 @@ ul.sub-menu>li>a {
 	color: #fff;
 }
 ul.navArea>li>a:hover, ul.sub-menu>li>a:hover {
-	color: deepskyblue;
+	color: #c3b590;
 }
 #searchBox {
 	display: inline-block;
 	padding-top: 4px;
 	padding-right: 5px;
 	float: right
+	
 }
 #searchBox input {
 	width: 300px;
@@ -90,11 +93,11 @@ ul.navArea>li>a:hover, ul.sub-menu>li>a:hover {
 	width: auto!important;
 	float: right;
 	border-radius: 0 5px 5px 0;
-	background: deepskyblue;
+	background: #FFC72C;
 	font-size: 13px;
 	font-weight: 600;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-	color: #fff
+	color: #333
 }
 @media only screen and (max-width:720px) {
 	nav ul {
@@ -144,6 +147,7 @@ ul.navArea>li>a:hover, ul.sub-menu>li>a:hover {
 		height: 50px;
 		padding: 10px;
 		margin: 5px 0;
+		border-radius:15px;
 	}
 	#icon img {
 		width: 22px;
