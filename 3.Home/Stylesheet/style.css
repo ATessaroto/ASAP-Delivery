@@ -22,14 +22,18 @@ body:focus, body::after
 {
 	height: 90px;
 	width: 100%;
-	margin: 0 ;
+	margin: 0 auto;
 	padding: 0;
-	position: sticky;
 	display:flex;
+	position: sticky;
+  	top: 0px;
+	z-index:1;
 
 	box-shadow: 1px 2px 1px rgb(236, 236, 236);;
 	background-color: rgb(255, 255, 255);
 }
+
+
 
 #logo, #img_logo
 {
@@ -173,11 +177,19 @@ input::placeholder
 	background-color: rgb(240, 240, 240);
 }
 
+/*Fim*/
+
 #carousel
 {
-margin-top: 60px !important;
-display: flex;
-margin-left:auto;
-margin-right: auto;
+	margin-top: 60px !important;
+	margin-left:auto;
+	margin-right: auto;
+	
 }
-/*Fim*/
+
+.slides,.slide,.slide-image
+{
+	border-radius: 7px;
+}
+
+
