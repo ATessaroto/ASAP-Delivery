@@ -78,29 +78,33 @@ body:focus, body::after
 	color: #ffc72c;
 }
 
+.input_pesquisa
+{
+	height: 45px;
+	width: 440px;
+	border-radius: 4px;
+	margin: auto;
+	border: none;
+	display: inline-block;
+	background-color: rgb(248, 248, 248);
+	text-align: center;
+}
+
 #pesquisa
 {
 	height: 45px;
-	width: 450px;
-	border-radius: 4px;
+	width: 400px;
 	border: none;
 	background-color: rgb(248, 248, 248);
-	padding-left: 15px;
 	font-size: 16px;
 }
+
 
 input::placeholder
 {
     padding: 2px;
 }
 
-.input_pesquisa
-{
-	padding-left: 35px;
-	padding-top: 20px;
-
-	display: inline-block;
-}
 
 /* Estilo Usuario e sacola dropdown*/
 
@@ -181,7 +185,7 @@ input::placeholder
 
 #carousel
 {
-	margin-top: 60px !important;
+	margin-top: 30px !important;
 	margin-left:auto;
 	margin-right: auto;
 	
