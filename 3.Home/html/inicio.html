@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Asap Delivery</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fe76b256b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="..//Stylesheet/style.css">
+    <link rel="stylesheet" href="../Stylesheet/slider.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
+
 <body>
-    <div id="header">
-        <a href="#" id="logo"><img id="img_logo" src="../Imagens/logo-ASAP.png" alt="logo"></a>
+    <header>
+        <div id="header">
+            <a href="#" id="logo"><img id="img_logo" src="../Imagens/logo-ASAP.png" alt="logo"></a>
 
-        <ul id="buttons">
-            <li class="btn" id="btn_inicio"><a class="link_btn" id="btn_inicio_id" href="index.html">ínicio</a></li>
-            <li class="btn" id="btn_restaurante"><a class="link_btn"  href="fotos.html">Restaurantes</a></li>
-            <li class="btn"  id="btn_categoria"><a class="link_btn" href="sobre.html">Categorias</a></li>
-        </ul>
+            <ul id="buttons">
+                <li class="btn" id="btn_inicio"><a class="link_btn" id="btn_inicio_id" href="index.html">ínicio</a></li>
+                <li class="btn" id="btn_restaurante"><a class="link_btn" href="fotos.html">Restaurantes</a></li>
+                <li class="btn" id="btn_categoria"><a class="link_btn" href="sobre.html">Categorias</a></li>
+            </ul>
 
-        <div class="input_pesquisa">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search"  onclick="SubmitEvent" id="pesquisa" name="pesquisa" placeholder="Pesquise por Item ou Loja...">
-        </div>
+            <div class="input_pesquisa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" onclick="SubmitEvent" id="pesquisa" name="pesquisa"
+                    placeholder="Pesquise por Item ou Loja...">
+            </div>
 
-        <div class="end">
-            <ul class='navArea'>
+            <div class="end">
+                <ul class='navArea'>
                     <li><a href="#">Usuário</a>
                         <ul class="sub-menu">
-                            <li class="dropdown_li"><a href="#">Pedidos</a></li>                      
-                            <li class="dropdown_li"><a href="#">Pagamentos</a></li>                      
-                            <li class="dropdown_li"><a href="#">Meus dados</a></li>   
-                            <li class="dropdown_li"><a href="#">Sair</a></li>                    
+                            <li class="dropdown_li"><a href="#">Pedidos</a></li>
+                            <li class="dropdown_li"><a href="#">Pagamentos</a></li>
+                            <li class="dropdown_li"><a href="#">Meus dados</a></li>
+                            <li class="dropdown_li"><a href="#">Sair</a></li>
                         </ul>
                     </li>
-                <li><a href="#">Sacola</a></li>
-            </ul>
+                    <li><a href="#">Sacola</a></li>
+                </ul>
+            </div>
+    </header>
+    <main>
         
-         
-    </div>
+            <div id="carousel" class="carousel">
+                <div class="slides">
+                    <div class="slide" data-state="active"><img class="slide-image" src="../Imagens/shawarma.jpeg"
+                            alt=""></div>
+                    <div class="slide"><img class="slide-image" src="../Imagens/massa.jpeg" alt=""></div>
+                    <div class="slide"><img class="slide-image" src="../Imagens/pizza.jpeg" alt=""></div>
+                    <div class="slide"><img class="slide-image" src="../Imagens/sobremesa.jpeg" alt=""></div>
+                </div>
+                <div class="indicators">
+                    <input class="indicator" name="indicator" data-slide="1" data-state="active" checked type="radio" />
+                    <input class="indicator" name="indicator" data-slide="2" type="radio" />
+                    <input class="indicator" name="indicator" data-slide="3" type="radio" />
+                    <input class="indicator" name="indicator" data-slide="4" type="radio" />
+                </div>
+            </div>
+        
+    </main>
 </body>
+<script src="../js/slider.js"></script>

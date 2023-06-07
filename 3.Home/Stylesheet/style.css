@@ -173,4 +173,11 @@ input::placeholder
 	background-color: rgb(240, 240, 240);
 }
 
+#carousel
+{
+margin-top: 60px !important;
+display: flex;
+margin-left:auto;
+margin-right: auto;
+}
 /*Fim*/
