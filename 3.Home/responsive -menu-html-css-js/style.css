@@ -1,0 +1,160 @@
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+body {
+	font-family: system-ui;
+	
+}
+.box {
+	width: 100%;
+	background: #333;
+	display: inline-block
+}
+#icon {
+	color: #fff;
+	font-size: 18px;
+	position: relative;
+	top: 5px;
+	font-weight: 500;
+	cursor: pointer;
+	padding-left: 10px;
+}
+#icon a {
+	text-decoration: none
+}
+nav {
+	display: none
+}
+nav ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 0;
+	background-color:#cabe3a;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border-bottom-color: blue;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	
+}
+nav li {
+	display: block;
+	font-size: 16px;
+	color:#333;
+	margin: 0 5px;
+}
+ul.navArea>li>a {
+	color:#333C;
+	
+}
+nav a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: inherit
+}
+.sub-menu li {
+	list-style-type: none;
+	display: inline-block;
+	width: 160px;
+}
+ul.navArea li ul.sub-menu {
+	display: none;
+	position: absolute
+}
+ul.navArea li {
+	position: relative;
+}
+ul.navArea li:hover ul.sub-menu {
+	display: block
+}
+.sub-menu li {
+	margin-left: 0!important
+}
+ul.sub-menu>li>a {
+	color: #fff;
+}
+ul.navArea>li>a:hover, ul.sub-menu>li>a:hover {
+	color: #c3b590;
+}
+#searchBox {
+	display: inline-block;
+	padding-top: 4px;
+	padding-right: 5px;
+	float: right
+	
+}
+#searchBox input {
+	width: 300px;
+	float: left;
+	border-radius: 2px 0 0 2px;
+	font-size: 14px;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit
+}
+#submitBtn {
+	width: auto!important;
+	float: right;
+	border-radius: 0 5px 5px 0;
+	background: #FFC72C;
+	font-size: 13px;
+	font-weight: 600;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	color: #333
+}
+@media only screen and (max-width:720px) {
+	nav ul {
+		width: 100%!important
+	}
+	#sub-menu {
+		display: none
+	}
+	nav a {
+		padding: 5px 10px
+	}
+	.box {
+		padding: 5px;
+	}
+	#navArea {
+		display: none;
+		height: 24px;
+		line-height: 24px;
+	}
+	.toggle-nav {
+		padding: 6px 10px
+	}
+	#searchBox input {
+		width: 150px;
+		padding: 5px;
+		margin: 0;
+	}
+	#icon img {
+		width: 22px;
+	}
+}
+@media only screen and (min-width:720px) {
+	#icon {
+		display: none
+	}
+	#navArea {
+		height: 50px;
+		line-height: 50px;
+	}
+	nav {
+		display: block!important
+	}
+	nav li {
+		display: inline-block
+	}
+	#searchBox input {
+		height: 50px;
+		padding: 10px;
+		margin: 5px 0;
+		border-radius:15px;
+	}
+	#icon img {
+		width: 22px;
+	}
+}
