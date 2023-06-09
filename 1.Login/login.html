@@ -4,15 +4,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/fe76b256b3.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="login_style.css">
+        
         <title>Login</title>
     </head>
     <body>
         <div class="display" id="container_log">
             <p id="bem_vindo">Faça seu Login e peça já!</p>
 
-            <input type="email" name="email_log"  placeholder="Usuário" id="mail_log" required>
-            <input type="password" name="password_log" placeholder="Senha" id="pass_log" required>
+            <div class="user">
+                <i class="fa-solid fa-user" style="color: #6b6b6b;"></i>
+                <input type="email" name="email_log"  placeholder="Usuário" id="mail_log" required>
+            </div>
+            
+            <div class="senha">
+                <i class="fa-solid fa-lock" style="color: #6b6b6b;"></i>
+                <input type="password" name="password_log" placeholder="Senha" id="pass_log" required>
+            </div>
 
             <!--
                 <div class="cmb">
