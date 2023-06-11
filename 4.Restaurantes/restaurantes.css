@@ -1,0 +1,200 @@
+body
+{
+	background-image: url(..//Imagens/Fundo_home.png);
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: 100%;
+	margin: 0;
+
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body:focus, body::after
+{
+	outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+#header
+{
+	height: 90px;
+	width: 100%;
+	margin: 0 ;
+	padding: 0;
+	position: sticky;
+	display:flex;
+
+	box-shadow: 1px 2px 1px rgb(236, 236, 236);;
+	background-color: rgb(255, 255, 255);
+}
+
+#logo, #img_logo
+{
+	display: inline-block;
+	height: 65px;
+    width: 85px;
+	margin-top: 5px;
+	margin-left: 12px;
+}
+
+.btn
+{
+	display: inline;
+}
+
+.link_btn
+{
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+	font-size: 14px;
+}
+
+.link_btn:hover
+{
+	color: #ffc72c;
+}
+
+#buttons
+{
+	margin-top: 35px;
+	margin-left: 0;
+}
+
+#btn_restaurante, #btn_categoria
+{
+	margin-left: 10px;
+}
+
+#btn_restaurantes_id
+{
+	color: #ffc72c;
+}
+
+#pesquisa
+{
+	height: 45px;
+	width: 450px;
+	border-radius: 4px;
+	border: none;
+	background-color: rgb(248, 248, 248);
+	padding-left: 15px;
+	font-size: 16px;
+}
+
+input::placeholder
+{
+    padding: 2px;
+}
+
+.input_pesquisa
+{
+	padding-left: 35px;
+	padding-top: 20px;
+
+	display: inline-block;
+}
+
+/* Estilo Usuario e sacola dropdown*/
+
+.end
+{
+	margin:auto;
+	display: inline-block;
+	padding-left: 400px;
+	
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+
+.navArea
+{
+	list-style:none;
+	border:none;
+	margin: auto;
+	
+}
+
+.navArea li
+{
+	position:relative;
+	float:left;
+}
+
+.navArea li a
+{
+	color:#000000; 
+	text-decoration:none;
+	padding:5px 10px;
+	display:block;
+}
+
+.navArea li a:hover
+{
+	color:#ffc72c;
+}
+
+.navArea li  ul
+{
+	position:absolute;
+	width: 125px;
+	right:15px;
+	
+	background-color:#fff;
+	border:1px solid #fdfdfd;
+	-moz-box-shadow:0 3px 10px 0 rgb(101, 101, 101);
+	-webkit-box-shadow:0 3px 10px 0 rgb(101, 101, 101);
+	border-radius: 3px;
+
+	padding: 0;
+	display:none;
+}
+
+.navArea li:hover ul, .navArea li.over ul
+{
+	display:block;
+}
+
+.navArea li ul li
+{
+	border-radius: 3px;
+	display:inline-block;
+	width:125px;
+	background-color: transparent;
+}
+
+.dropdown_li:hover
+{
+	background-color: rgb(240, 240, 240);
+}
+
+/* Card */
+
+#card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    grid-gap: 20px;
+    height: 1px;
+    margin: -1px auto 0;
+    width: 80%;
+    z-index: -1;
+    
+}
+
+.card-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+  
