@@ -58,7 +58,17 @@ body:focus, body::after
 	font-size: 14px;
 }
 
+#user,#bag
+{
+	padding-right: 5px;
+}
+
 .link_btn:hover
+{
+	color: #ffc72c;
+}
+
+#user:hover,#bag:hover
 {
 	color: #ffc72c;
 }

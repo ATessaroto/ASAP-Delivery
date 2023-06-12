@@ -3,8 +3,8 @@ body
 	background-image: url(..//Imagens/Fundo_home.png);
     background-attachment: fixed;
     background-position: right top;
-    background-repeat:no-repeat;
-	background-size: 100%;
+    background-size: 100%;
+	background-repeat:no-repeat;
 	margin: 0;
 
 	font-family: Arial, Helvetica, sans-serif;
@@ -23,16 +23,18 @@ body:focus, body::after
 {
 	height: 90px;
 	width: 100%;
-	margin: 0 ;
+	margin: 0 auto;
 	padding: 0;
-	position: sticky;
-	top: 0px;
 	display:flex;
-	z-index: 1;
+	position: sticky;
+  	top: 0px;
+	z-index:1;
 
 	box-shadow: 1px 2px 1px rgb(236, 236, 236);;
 	background-color: rgb(255, 255, 255);
 }
+
+
 
 #logo, #img_logo
 {
@@ -56,7 +58,17 @@ body:focus, body::after
 	font-size: 14px;
 }
 
+#user,#bag
+{
+	padding-right: 5px;
+}
+
 .link_btn:hover
+{
+	color: #ffc72c;
+}
+
+#user:hover,#bag:hover
 {
 	color: #ffc72c;
 }
@@ -72,7 +84,7 @@ body:focus, body::after
 	margin-left: 10px;
 }
 
-#btn_restaurantes_id
+#btn_restaurante_id
 {
 	color: #ffc72c;
 }
@@ -98,10 +110,12 @@ body:focus, body::after
 	font-size: 16px;
 }
 
+
 input::placeholder
 {
     padding: 2px;
 }
+
 
 /* Estilo Usuario e sacola dropdown*/
 
@@ -177,6 +191,8 @@ input::placeholder
 {
 	background-color: rgb(240, 240, 240);
 }
+
+/*Fim*/
 
 /* Card */
 
