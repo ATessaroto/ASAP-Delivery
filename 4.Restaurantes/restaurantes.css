@@ -191,7 +191,7 @@ input::placeholder
 
 .card 
 {
-	border: solid 3px red;
+	border: solid 2px red;
 	height: 270px;
 	width: 250px;
 	border-radius: 3px;
