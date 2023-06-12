@@ -4,6 +4,7 @@
     background-attachment: fixed;
     background-position: right top;
     background-size: 100%;
+    background-repeat:no-repeat;
     outline: none;
 
 }
