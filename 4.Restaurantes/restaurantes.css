@@ -218,4 +218,14 @@ input::placeholder
    height: 170px;
    width: 100%;
 }
+
+.card-content
+
+{
+text-align: center;
+font-weight: bolder;
+color: black;
+font-size: 18px;
+}
+
   
