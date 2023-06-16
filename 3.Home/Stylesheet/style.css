@@ -206,6 +206,7 @@ input::placeholder
 .slides,.slide,.slide-image
 {
 	border-radius: 7px;
+	cursor: pointer;
 }
 
 
