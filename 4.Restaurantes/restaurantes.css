@@ -7,7 +7,7 @@ body
 	background-repeat:no-repeat;
 	margin: 0;
 
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial
 }
 
 body:focus, body::after
@@ -18,6 +18,8 @@ body:focus, body::after
 *:focus {
     outline: none;
 }
+
+a:-webkit-any-link {text-decoration: none;}
 
 #header
 {
@@ -151,6 +153,7 @@ input::placeholder
 	text-decoration:none;
 	padding:5px 10px;
 	display:block;
+	cursor: pointer;
 }
 
 .navArea li a:hover
@@ -196,6 +199,13 @@ input::placeholder
 
 /* Card */
 
+p
+{
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
 .col1
 {
 	display:flex;
@@ -207,25 +217,70 @@ input::placeholder
 
 .card 
 {
-	border: solid 2px red;
+	border: solid 3px black;
+	border-radius: 5px;
+	box-shadow: 0px 2px 2px 2px rgb(203, 203, 203);
+	background-color: white;
 	height: 270px;
 	width: 250px;
-	border-radius: 3px;
+}
+
+.card:hover,.card-image:hover
+{
+	border-color: #ffc72c;
+	cursor: pointer;
 }
 
 .card-image 
 {
-   height: 170px;
+   height: 210px;
    width: 100%;
+   border-bottom: solid 3px black;
 }
 
 .card-content
-
 {
-text-align: center;
-font-weight: bolder;
-color: black;
-font-size: 18px;
+	text-align: center;
+	font-weight: bolder;
+	color: black;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	text-decoration: none;
 }
+
+/* Página Restaurante */
+
+.col-info
+{
+	display: inline-flex;
+	padding-left: 100px;
+	padding-top:20px ;
+	background-color: white;
+	width: 100%;
+	border-bottom: solid 4px black;
+}
+
+#logo_restaurante
+{
+	height: 180px;
+	width: 180px;
+	border-radius: 150px;
+	border: solid 4px black;
+}
+
+#nome_logo
+{
+	padding-top: 130px;
+	padding-left: 25px;
+	font-weight: bolder;
+	font-size: 26px;
+	padding-bottom: 0;
+}
+
+
+
+
+
 
   
