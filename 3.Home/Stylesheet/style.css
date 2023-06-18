@@ -263,3 +263,27 @@ p
 }
 
 
+.btn_contador {
+
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	
+}
+
+
+#finalizar {
+
+	height: 110px;
+	width: 110px;
+	margin-top: 180px;
+	margin-left: 0px;
+
+	text-align: center;
+	font-weight: bolder;
+	color: black;
+	font-size: 18px;
+	
+	
+}
