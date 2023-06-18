@@ -210,3 +210,80 @@ input::placeholder
 }
 
 
+/* Card */
+
+p
+{
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+.col1
+{
+	display:flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	padding-left: 75px;
+	padding-top: 50px;
+}
+
+.card 
+{
+	border: solid 3px black;
+	border-radius: 5px;
+	box-shadow: 0px 2px 2px 2px rgb(203, 203, 203);
+	background-color: white;
+	height: 150px;
+	width: 130px;
+}
+
+.card:hover,.card-image:hover
+{
+	border-color: #ffc72c;
+	cursor: pointer;
+}
+
+.card-image 
+{
+   height: 100px;
+   width: 100%;
+   border-bottom: solid 3px black;
+}
+
+.card-content
+{
+	text-align: center;
+	font-weight: bolder;
+	color: black;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	text-decoration: none;
+}
+
+
+.btn_contador {
+
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	
+}
+
+
+#finalizar {
+
+	height: 110px;
+	width: 110px;
+	margin-top: 180px;
+	margin-left: 0px;
+
+	text-align: center;
+	font-weight: bolder;
+	color: black;
+	font-size: 18px;
+	
+	
+}
