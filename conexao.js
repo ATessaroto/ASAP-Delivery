@@ -3,12 +3,12 @@ const {createConnection} = require('mysql');
 const pool = createConnection ({
     host: "localhost",
     user: "root",
-    password: "Anthoi97",
-    database: "test",
+    password: "password",
+    database: "asap",
     connectionLimit: 10
 });
 
-pool.query(`select * from user`, function(err, result, fields) {
+pool.query(`select * from asap.user;`, function(err, result, fields) {
     if (err) {
         return console.log(err);
     }
