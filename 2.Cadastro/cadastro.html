@@ -15,25 +15,25 @@
     </div>
     <div class="spacing"></div> 
     <div class="display" id="container_log">
-        <form action="/cadastro" method="post">
+        <form action="../../ASAP/conexao.php" method="post">
             <p class="titulo">Preencha seus Dados:</p>
         
-            <input type="text" name="nome_reg"  placeholder="Nome Compelto" id="nome_reg" required>
-
+            <input type="text" name="nome_reg" placeholder="Nome Compelto" id="nome_reg" required>
+        
             <div class="personal_info">
-                <input type="text" name="cpf_reg"  placeholder="CPF" id="cpf_reg" required>
-                <input type="date" name="date_reg"  placeholder="Data de Nascimento" id="date_reg" required>
+                <input type="text" name="cpf_reg" placeholder="CPF" id="cpf_reg" required>
+                <input type="date" name="date_reg" placeholder="Data de Nascimento" id="date_reg" required>
             </div>
-
-            <input type="email" name="email_log"  placeholder="E-mail" id="mail_log" onchange="onChangeEmail()" required>
-
+        
+            <input type="email" name="email_log" placeholder="E-mail" id="mail_log" onchange="onChangeEmail()" required>
+        
             <div class="senha">
                 <input type="password" name="password_log" placeholder="Senha" id="pass_log" onchange="onChangePassword()" required>
                 <input type="password" name="confirm_password_log" placeholder="Confirmar senha" id="c_pass_log" required>
             </div>
-
-            <button type="submit" class="btn_submit" id="btn_registro" disabled="true" >Registrar</button>
-        </form>
+        
+            <button type="submit" class="btn_submit" id="btn_registro" disabled="true">Registrar</button>
+        </form>        
     </div>
 </body>
 <script src="./validacoes.js"></script>
