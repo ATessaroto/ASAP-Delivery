@@ -1,16 +1,30 @@
-const {createConnection} = require('mysql');
+const express = require('express');
+const mysql = require('mysql2');
 
-const pool = createConnection ({
-    host: "localhost",
-    user: "root",
-    password: "password",
-    database: "asap",
-    connectionLimit: 10
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'password',
+    database: 'asap'
 });
 
-pool.query(`select * from asap.user;`, function(err, result, fields) {
-    if (err) {
-        return console.log(err);
-    }
-    return console.log(result);
-})
+const app = express();
+
+app.get('/', (req, res) => {
+    res.status(200).send('<p>Hi</p>')
+});
+
+app.get('/users', (req, res) => {
+    connection.query('SELECT * FROM users', (error, results) => {
+        if (error) throw error;
+        res.send('Lista de usuários: ' + JSON.stringify(results));
+    });
+});
+
+app.listen(3000, () => {
+    console.log('Servidor iniciado na porta 3000');
+});
+
+
+
+
