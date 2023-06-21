@@ -49,19 +49,32 @@
         </dialog>
 
         <dialog class="dialog_sacola">
-            <h1 id="titulo">Sua sacola:</h1>
-        </dialog>
+          <h1 id="titulo">Sua sacola:</h1>
+          <table>
+            <thead>
+              <tr>
+                <td>Item</td>
+                <td>Quantidade</td>
+              </tr>
+            </thead>
+            <tbody id="items-sacola"></tbody>
+          </table>
+          <button type="button" onclick="clearSacola()">Limpar</button>
+          <button type="button">Finalizar</button>
+      </dialog>
 
     </section> 
     <!--Fim Header-->
     <main>
             <div class="col-info">
+              
               <img id="logo_restaurante" src="..//4.Restaurantes/img/Pizzaria.png" alt="">
               <p id="nome_logo">Pizzaria Pizza Master</p>
             </div>
             <div class="col1">
               
-              <div class="card">
+              <div class="card sacola-add" data-name="Pizza Portuguesa">
+               
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/pizza.jpg">
                 </div>
@@ -70,8 +83,8 @@
                 </div>
               
               </div>
-
-              <div class="card">
+            
+              <div class="card sacola-add" data-name="Pizza Frango Cremosa">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/pizza2.jpg">
                 </div>
@@ -80,7 +93,7 @@
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card sacola-add" data-name="Pizza Calabresa">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/pizza3.jpg">
                 </div>

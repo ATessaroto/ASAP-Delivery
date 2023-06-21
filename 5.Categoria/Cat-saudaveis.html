@@ -49,8 +49,19 @@
         </dialog>
 
         <dialog class="dialog_sacola">
-            <h1 id="titulo">Sua sacola:</h1>
-        </dialog>
+          <h1 id="titulo">Sua sacola:</h1>
+          <table>
+            <thead>
+              <tr>
+                <td>Item</td>
+                <td>Quantidade</td>
+              </tr>
+            </thead>
+            <tbody id="items-sacola"></tbody>
+          </table>
+          <button type="button" onclick="clearSacola()">Limpar</button>
+          <button type="button">Finalizar</button>
+      </dialog>
 
     </section> 
     <!--Fim Header-->
@@ -61,7 +72,7 @@
             </div>
             <div class="col1">
              
-              <div class="card">
+              <div class="card sacola-add" data-name="Suco Natural">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/Suco-natural.png">
                 </div>
@@ -71,7 +82,7 @@
              
               </div>
              
-              <div class="card">
+              <div class="card sacola-add" data-name="Marmita Saudavel">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/Marmita-saudavel.png">
                 </div>

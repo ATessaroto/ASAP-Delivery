@@ -49,8 +49,19 @@
         </dialog>
 
         <dialog class="dialog_sacola">
-            <h1 id="titulo">Sua sacola:</h1>
-        </dialog>
+          <h1 id="titulo">Sua sacola:</h1>
+          <table>
+            <thead>
+              <tr>
+                <td>Item</td>
+                <td>Quantidade</td>
+              </tr>
+            </thead>
+            <tbody id="items-sacola"></tbody>
+          </table>
+          <button type="button" onclick="clearSacola()">Limpar</button>
+          <button type="button">Finalizar</button>
+      </dialog>
 
     </section> 
     <!--Fim Header-->
@@ -61,7 +72,7 @@
             </div>
             <div class="col1">
              
-              <div class="card">
+              <div class="card sacola-add" data-name="Marmita Simples">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/Marmita.png">
                 </div>
@@ -71,7 +82,7 @@
              
               </div>
              
-              <div class="card">
+              <div class="card sacola-add" data-name="Marmita Top">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/Marmita-cara.png">
                 </div>
@@ -81,7 +92,7 @@
               
               </div>
              
-              <div class="card">
+              <div class="card sacola-add" data-name="Coca">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/coca.jpg">
                 </div>
@@ -90,7 +101,7 @@
                 </div>
               </div>  
 
-              <div class="card">
+              <div class="card sacola-add" data-name="Marmita Fit">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/Marmita-saudavel.png">
                 </div>
@@ -99,7 +110,7 @@
                 </div>
               </div>  
 
-              <div class="card">
+              <div class="card sacola-add" data-name="Varias Marmitas">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/Varias-marmitas.png">
                 </div>
@@ -108,7 +119,7 @@
                 </div>
               </div>  
 
-              <div class="card">
+              <div class="card sacola-add" data-name="Suco Natural">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/Suco-natural.png">
                 </div>
@@ -117,7 +128,7 @@
                 </div>
               </div>  
 
-              <div class="card">
+              <div class="card sacola-add" data-name="Sucos">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/Sucos.png">
                 </div>
@@ -126,7 +137,7 @@
                 </div>
               </div>  
 
-              <div class="card">
+              <div class="card sacola-add" data-name="Refris">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/refri-gelado.png">
                 </div>
@@ -135,7 +146,7 @@
                 </div>
               </div>  
 
-              <div class="card">
+              <div class="card sacola-add" data-name="Bife Suculento">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/bife-suculento.png">
                 </div>
@@ -144,7 +155,7 @@
                 </div>
               </div>  
 
-              <div class="card">
+              <div class="card sacola-add" data-name="Mignon">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/mignon.png">
                 </div>
@@ -153,7 +164,7 @@
                 </div>
               </div>  
 
-              <div class="card">
+              <div class="card sacola-add" data-name="Frango Assado">
                 <div class="img_container">
                   <img class="card-image" src="../4.Restaurantes/img/Frango.png">
                 </div>

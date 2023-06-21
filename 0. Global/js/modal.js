@@ -8,21 +8,42 @@ const dialog_dados = document.querySelector('.dialog_dados');
 const btn_sacola = document.querySelector('.sacola');
 const dialog_sacola = document.querySelector('.dialog_sacola');
 
+const add_sacola = document.querySelectorAll('.sacola-add');
+const items_sacola = document.querySelector("#items-sacola");
+
+var items = [];
+
 
 btn_pagamento.onclick = () => dialog_pagamento.showModal();
 
-btn_dados.onclick = () => dialog_dados.showModal();
+btn_dados.onclick = () =>  dialog_dados.showModal();
 
-btn_sacola.onclick = () => dialog_sacola.showModal();
+btn_sacola.onclick = () => {
+    items_sacola.innerHTML = '';
+    Object.keys(items).forEach(function (el) {
+        tr = document.createElement("tr");
+        td_name = document.createElement("td");
+        td_value = document.createElement("td");
+        td_name.innerHTML = el;
+        td_value.innerHTML = items[el];
+        tr.appendChild(td_name);
+        tr.appendChild(td_value);
+        items_sacola.appendChild(tr);
+    })
+    dialog_sacola.showModal();
+}
+
+add_sacola.forEach(el => el.addEventListener('click', event => {
+    incrementCounterItem(el.getAttribute("data-name"))
+}))
 
 
-
-
-var counter = 0;
+// contador da sacola
+let counter = 0;
 
 // Função para atualizar o contador na página
 function updateCounter() {
-    var counterElement = document.querySelector(".counter");
+    let counterElement = document.querySelector(".counter");
     counterElement.textContent = counter;
 }
 
@@ -40,8 +61,21 @@ function decrementCounter() {
     }
 }
 
+function incrementCounterItem(name) {
+    if(items[name]) {
+        items[name]++;
+    } else {
+        items[name] = 1
+    }
+}
+
+function clearSacola() {
+    items = [];
+    items_sacola.innerHTML = '';
+}
+
 // Evento de clique para adicionar
-document.getElementById("addButton").addEventListener("click", incrementCounter);
+//document.getElementById("addButton").addEventListener("click", incrementCounter);
 
 // Evento de clique para retirar
-document.getElementById("subtractButton").addEventListener("click", decrementCounter);
+//document.getElementById("subtractButton").addEventListener("click", decrementCounter);

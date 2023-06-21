@@ -49,8 +49,19 @@
         </dialog>
 
         <dialog class="dialog_sacola">
-            <h1 id="titulo">Sua sacola:</h1>
-        </dialog>
+          <h1 id="titulo">Sua sacola:</h1>
+          <table>
+            <thead>
+              <tr>
+                <td>Item</td>
+                <td>Quantidade</td>
+              </tr>
+            </thead>
+            <tbody id="items-sacola"></tbody>
+          </table>
+          <button type="button" onclick="clearSacola()">Limpar</button>
+          <button type="button">Finalizar</button>
+      </dialog>
 
     </section> 
     <!--Fim Header-->
