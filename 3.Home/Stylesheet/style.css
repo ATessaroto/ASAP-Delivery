@@ -41,8 +41,8 @@ body:focus, body::after
 	display: inline-block;
 	height: 65px;
     width: 85px;
-	margin-top: 5px;
-	margin-left: 12px;
+	margin-top: 10px;
+	margin-left: 5px;
 }
 
 .btn
@@ -55,7 +55,7 @@ body:focus, body::after
 	text-decoration: none;
 	font-weight: bolder;
 	color: black;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 #user,#bag
@@ -75,8 +75,9 @@ body:focus, body::after
 
 #buttons
 {
-	margin-top: 35px;
+	margin-top: 20px;
 	margin-left: 0;
+	text-align: center;
 }
 
 #btn_restaurante, #btn_categoria
@@ -104,7 +105,7 @@ body:focus, body::after
 #pesquisa
 {
 	height: 45px;
-	width: 400px;
+	width: 300px;
 	border: none;
 	background-color: rgb(248, 248, 248);
 	font-size: 16px;
@@ -133,7 +134,7 @@ input::placeholder
 
 .navArea
 {
-	list-style:none;
+    list-style:none;
 	border:none;
 	margin: auto;
 	
@@ -143,6 +144,7 @@ input::placeholder
 {
 	position:relative;
 	float:left;
+
 }
 
 .navArea li a
@@ -285,5 +287,16 @@ p
 	color: black;
 	font-size: 18px;
 	
+	
+}
+
+/*sacola*/
+
+#dialog_sacola{
+
+	height: 50%;
+	width: 50%;
+	
+
 	
 }

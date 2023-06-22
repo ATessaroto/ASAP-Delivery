@@ -7,7 +7,7 @@ body
 	background-repeat:no-repeat;
 	margin: 0;
 
-	font-family: Arial
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 body:focus, body::after
@@ -210,8 +210,9 @@ p
 {
 	display:flex;
 	flex-wrap: wrap;
-	gap: 15px;
-	padding-left: 40px;
+	justify-content: center;
+	gap: 10px;
+	padding-left: 20px;
 	padding-top: 20px;
 }
 
@@ -280,6 +281,17 @@ p
 	font-weight: bolder;
 	font-size: 30px;
 	padding-bottom: 0;
+}
+
+/*sacola*/
+
+#dialog_sacola{
+
+	height: 50%;
+	width: 50%;
+	
+
+	
 }
 
 
