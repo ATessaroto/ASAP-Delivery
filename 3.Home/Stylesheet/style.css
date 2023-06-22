@@ -134,11 +134,29 @@ input::placeholder
 
 .navArea
 {
-    list-style:none;
-	border:none;
-	margin: auto;
-	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+
+@media (max-width: 768px) {
+	.navArea {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.sacola {
+	margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+	.sacola {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+}	
+
 
 .navArea li
 {
