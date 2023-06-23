@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://kit.fontawesome.com/fe76b256b3.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="../4.Restaurantes/restaurantes.css" />
+      <link rel="stylesheet" href="../5.Categoria/categoria.css" />
       <link rel="stylesheet" href="../../ASAP/0. Global/js/modal.js"> <!--Sempre copiar esse onde tiver o nav-->
       <title>Restaurantes</title>
   </head>
@@ -17,7 +17,7 @@
         <ul id="buttons">
             <li class="btn" id="btn_inicio"><a class="link_btn" href="../3.Home/html/inicio.html">ínicio</a></li>
             <li class="btn" id="btn_restaurante"><a class="link_btn" id="btn_restaurante_id" href="../4.Restaurantes/restaurantes.html">Restaurantes</a></li>
-            <li class="btn" id="btn_categoria"><a class="link_btn" href="../5.Categoria/Categorias.html">Categorias</a></li>
+            <li class="btn" id="btn_categoria"><a class="link_btn" id="btn_categoria_id" href="../5.Categoria/Categorias.html">Categorias</a></li>
         </ul>
 
         <div class="input_pesquisa">
@@ -30,7 +30,7 @@
             <ul class='navArea'>
                 <li><a><i id="user" class="fa-solid fa-user"></i>Usuário</a>
                     <ul class="sub-menu">
-                        <li class="dropdown_li"><a href="../../4.Restaurantes/Pedidos.html">Pedidos</a></li>
+                        <li class="dropdown_li"><a href="Pedidos.html">Pedidos</a></li>
                         <li class="dropdown_li"><a class="pagamento">Pagamentos</a></li>
                         <li class="dropdown_li"><a class="meus_dados">Meus dados</a></li>
                         <li class="dropdown_li"><a href="../1.Login/login.html">Sair</a></li>
@@ -48,7 +48,7 @@
             <h1 id="titulo">Atualizar Seus Dados:</h1>
         </dialog>
 
-        <dialog class="dialog_sacola"  style="width: 500px; height: 300px;">
+        <dialog class="dialog_sacola" style="width: 600px; height: 300px;">
           <h1 id="titulo">Sua sacola:</h1>
           <table>
             <thead>
@@ -62,65 +62,35 @@
           <button type="button" onclick="clearSacola()">Limpar</button>
           <button type="button">Finalizar</button>
         </dialog>
-        
 
     </section> 
     <!--Fim Header-->
-    <main>
-            <div class="col1">
-              <a href="Pizzaria.html">
-              <div class="card">
-                <div class="img_container">
-                  <img class="card-image" src="../4.Restaurantes/img/Pizzaria.png">
-                </div>
-                <div class="card-content">
-                  <p>Pizza Master</p>
-                </div>
-              </a>
-              </div>
-              <a href="Boa-Marmita.html">
-              <div class="card">
-                <div class="img_container">
-                  <img class="card-image" src="../4.Restaurantes/img/Boa Marmita.jpeg">
-                </div>
-                <div class="card-content">
-                  <p>Boa Marmita </p>
-                </div>
-              </a>
-              </div>
-              <a href="Churrascaria.html">
-              <div class="card">
-                <div class="img_container">
-                  <img class="card-image" src="../4.Restaurantes/img/Churrascaria.jpeg">
-                </div>
-                <div class="card-content">
-                  <p>Churrascaria Estrela</p>
-                </div>
-              </a>
-              </div>  
-              <a href="Padaria.html">
-              <div class="card">
-                <div class="img_container">
-                  <img class="card-image" src="../4.Restaurantes/img/Padaria Faustino padaria logo preto e bege.png">
-                </div>
-                <div class="card-content">
-                  <p>Padaria Faustino</p>
-                </div>
-              </a>
-              </div>
-              <a href="Divina-marmita.html">
-              <div class="card">
-                <div class="img_container">
-                  <img class="card-image" src="../4.Restaurantes/img/Marmitex_logo.png">
-                </div>
-                <div class="card-content">
-                  <p>Divina Marmitex</p>
-                </div>
-              </div>
-            </a>
-            </div>
+   
+  
 
-    </main>
+<body>
+  
+
+  <div class="card new-orders" style="width: 100%; margin-bottom: 20px; margin-top: 20px;">
+    <h2 class="card-title" style="text-align: center;">Novos Pedidos</h2>
+    <div class="card-content" style="text-align: left;">
+      <!-- Conteúdo dos novos pedidos aqui -->
+      <p>Pedido 1</p>
+      <p>Pedido 2</p>
+      <p>Pedido 3</p>
+    </div>
+  </div>
+
+  <div class="card old-orders" style="width: 100%">
+    <h2 class="card-title" style="text-align: center;">Pedidos Concluidos</h2>
+    <div class="card-content" style="text-align: left;">
+      <!-- Conteúdo dos pedidos antigos aqui -->
+      <p>Pedido 4</p>
+      <p>Pedido 5</p>
+      <p>Pedido 6</p>
+    </div>
+  </div>
+</body>
   </body>
   <script src="../0. Global/js/modal.js"></script> <!--Sempre copiar esse onde tiver o nav-->
 </html>
