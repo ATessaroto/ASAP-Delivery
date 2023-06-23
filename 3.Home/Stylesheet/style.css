@@ -124,8 +124,14 @@ input::placeholder
 {
 	margin:auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	display:flex;
 	padding-left: 100px;
+=======
+	display:flex
+	padding-left: 100px;
+	
+>>>>>>> parent of c765e66 (pagina pedidos)
 =======
 	display:flex
 	padding-left: 100px;
@@ -136,7 +142,12 @@ input::placeholder
 	font-size: 15px;
 	text-align: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	margin: auto;
+=======
+	margin-top: px;
+	margin-left: 40px;
+>>>>>>> parent of c765e66 (pagina pedidos)
 =======
 	margin-top: px;
 	margin-left: 40px;
