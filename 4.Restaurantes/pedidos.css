@@ -1,0 +1,168 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    text-decoration: none;
+}
+
+#img_logo {
+    height: 40px;
+}
+
+#buttons {
+    list-style: none;
+    display: flex;
+}
+
+.link_btn {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.link_btn:hover {
+    color: #ff7f50;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+.fa-search {
+    margin-right: 5px;
+}
+
+#pesquisa {
+    border: none;
+    background-color: #f2f2f2;
+    width: 200px;
+    font-size: 14px;
+    outline: none;
+}
+
+.user-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.user-menu ul {
+    list-style: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.user-menu:hover ul {
+    display: block;
+}
+
+.sub-menu {
+    margin-top: 5px;
+}
+
+.dropdown_li {
+    margin-bottom: 5px;
+}
+
+.cart {
+    margin-left: 20px;
+}
+
+/* Dialogs */
+.dialog_pagamento,
+.dialog_dados,
+.dialog_sacola {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+/* Main Content */
+main {
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .link_btn {
+        padding: 5px;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+    }
+
+    .user-menu {
+        margin: 10px 0;
+    }
+
+    .cart {
+        margin: 10px 0;
+    }
+}
