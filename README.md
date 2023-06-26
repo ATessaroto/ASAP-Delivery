@@ -19,9 +19,7 @@ O sistema ASAP possui as seguintes funcionalidades principais:
 
 3. Realização de Pedidos: Os usuários podem selecionar os alimentos desejados e adicioná-los ao carrinho de compras. Eles podem especificar quantidades, adicionar observações e selecionar a opção de entrega.
 
-4. Gerenciamento de Pedidos: O sistema permite aos usuários visualizarem o histórico de pedidos realizados e o status atual de cada um. Os administradores do sistema têm acesso adicional para gerenciar e atualizar os pedidos.
-
-5. Processamento de Pagamentos: O sistema oferece suporte a diferentes métodos de pagamento, como cartão de crédito, transferência bancária e pagamento na entrega.
+4. Gerenciamento de endereços e pagamentos: Os usuários podem inserir seus métodos de pagamento e endereços de entrega no sistema para futuramente os usar no fechamento de pedido.
 
 ## Autores
 - Anthoni Tessaroto 
